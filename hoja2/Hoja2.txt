@@ -1,0 +1,15 @@
+HOJA 2
+Ejercicio 1. Un marinero ebrio se tambalea al subir por una rampa del muelle a su barco. La rampa tiene 5 pasos de ancho y 15 de largo. Comenzamos a observar al marinero cuando está en el extremo de la rampa que se apoya sobre el muelle, comenzando a caminar hacia el barco por el centro de la rampa. Si da más de dos pasos a la izquierda o a la derecha, caerá al agua y se ahogará, pero si da más de 15 pasos hacia delante estará a salvo a bordo de su barco. Escribe un programa para simular el irregular avance del marinero según estas instrucciones:
+	a. El programa lee repetidamente un entero del teclado. 
+	b. Si el entero es negativo, supondremos que el pirata se durmió sobre la rampa. 
+	c. Si el entero es divisible entre 2, el pirata da un paso hacia adelante.
+	d. Si el entero no es divisible entre 2, pero el entero menos 1 es divisible entre 4, el pirata da un paso a la derecha. 
+	e. En otro caso, el pirata da un paso a la izquierda. 
+	f. El programa finalizará escribiendo el paradero del pirata: cae por un costado y se ahoga, logra abordar su barco o se duerme sobre la rampa. Debe de ir detallando cada acción que acomete. 
+
+Ejercicio 2. Construye un programa que muestre el resultado de un partido de tenis entre dos jugadores A y B. Para ello se introducirá inicialmente el número máximo de sets que se podrán disputar en el partido y, sucesivamente el ganador de cada uno de los juegos del partido. Un partido de tenis se basa en la disputa de juegos. Cada juego es ganado por uno de los jugadores. Si un jugador logra hacerse con un número suficiente de juegos, gana un set, y con el número suficiente de sets, gana el partido. Cuando un jugador gana un set, se inicia la disputa del siguiente set comenzando ambos jugadores desde 0 juegos. Un jugador gana un set, si anota 6 juegos y el rival tiene 4 o menos, o si anota 7 juegos, dando igual los que tenga el contrincante. Se gana el partido si se consiguen la mitad más uno de los sets en juego. Es decir, si el partido es a 3, hay que ganar 2, y si es a 5, basta con 3. Hay que ir leyendo una secuencia de A y B que nos va indicando qué jugador va ganando cada juego, e ir escribiendo un mensaje tras ello, indicando que el jugador ha ganado el juego y el resultado parcial del partido (sets y juegos). Al final hay que indicar quién ha ganado y terminar el programa.
+
+Ejercicio 3. Escriba un programa que sirva para examinar a un niño de las tablas de multiplicar. Para ello se generan de forma pseudoaleatoria diez preguntas que son planteadas al niño. Ante cada pregunta (por ejemplo “4x5=”) el niño contestará con un número. Si la respuesta es la correcta se le felicita. Si la respuesta es incorrecta se le informará al niño de su error y se le volverá a plantear la misma pregunta hasta queacierte. Después de concluir con la última pregunta se informará al niño sobre cuántas preguntas acertó a la primera.
+
+Ejercicio 4. Ejercicio 18. Escribe un programa que calcule cuál es la letra que corresponde con un determinado número de DNI.
+

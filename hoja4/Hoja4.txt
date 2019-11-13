@@ -1,0 +1,22 @@
+HOJA 4
+
+Ejercicio 1. Desarrolla un juego de “hundir la flota” para jugar contra el ordenador. El ordenador colocará inicialmente sus barcos en su tablero sin mostrarlos por pantalla
+para que el usuario no conozca su ubicación. Le pedirá al usuario que introduzca
+información sobre la ubicación de sus barcos (los del usuario). Ambos jugarán con el mismo número de barcos y de las mismas dimensiones. Y se procederá a jugar por turnos, repitiendo disparo si se acierta y perdiendo el turno si el proyectil cae en una casilla en la que haya “agua”. Tras cada jugada, se mostrará información al usuario sobre la situación de su tablero, y sobre la situación que conoce del tablero del ordenador (es decir, sólo los disparos que ha hecho, sobre qué posición y sus aciertos y errores). La estrategia a utilizar por el ordenador para ganar, se deja en manos de cada desarrollador y se puede hacer tan sofisticada como se desee. No está permitido que el ordenador utilice información sobre la situación de los barcos del adversario, se supone que el juego es limpio.
+Desarrollar dos versiones del ejercicio. La primera con barcos de una sola casilla, y la segunda con barcos de más de una casilla (dos, tres... definid este campo por parámetros).
+
+Ejercicio 2. El juego de la vida pretende simular el comportamiento de seres absolutamente simples (unicelulares) sobre las celdas de un tablero rectangular. Cada celda, excepto las de la periferia, tiene ocho vecinas y en cada una de ellas puede vivir un solo bicho. Sea numvecinas(i,j) el número de celdas contiguas a la celda (i,j) que están ocupadas.
+Cada cierto tiempo se produce una renovación generacional siguiendo las siguientes reglas:
+	• El bicho que vive en la celda (i,j) sobrevive sólo si numvecinas(i,j) es 2 ó 3. En caso contrario, muere por aburrimiento o escasez de recursos.
+	• Un bichito nace en la celda vacía (i,j) si y sólo si numvecinas(i,j) es exactamente 3.
+Escribe un programa que implemente este juego de la vida. Inicialmente se le preguntará al usuario por las dimensiones del tablero (máximo 20x20) y se ofrecerá al usuario dos opciones: generación de una configuración de bichos en el tablero aleatoriamente, o generación de un tablero en blanco.
+Una vez hecha esta inicialización se mostrará el resultado por pantalla, y se le ofrecerán al usuario las siguientes opciones:
+	• Generar un nuevo tablero aleatoriamente.
+	• Generar un nuevo tablero en blanco.
+	• Introducir un nuevo bicho en una celda vacía dando sus coordenadas.
+	• Eliminar un bicho en una celda donde haya bicho, dejándola vacía.
+	• Simular un determinado número de generaciones.
+	• Salir.
+Tras cada operación, se deberá mostrar el tablero resultante. Al generar un nuevo tablero, se le dará la opción al usuario de elegir unas nuevas dimensiones.
+Pista 1: Puesto que los cambios se tienen que realizar a la vez en todo el tablero, para realizar los cálculos anteriores se utilizarán dos tableros: uno que contenga la generación actual y otro la siguiente.
+Pista 2: Se recomienda implementar la función booleana posValida(i,j) que devuelva verdad sí y sólo si la posición (i,j) está dentro del tablero.

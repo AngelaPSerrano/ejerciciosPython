@@ -1,0 +1,22 @@
+HOJA 5
+
+Ejercicio 1. Desarrolla el juego del tic-tac-toe. Al entrar deberá mostrar dos opciones, jugar contra un humano o contra la máquina. En un tablero de 3x3 vacío incialmente, cada jugador irá colocando sus fichas. En caso de la máquina, tendremos que simular su movimiento. Puedes complicarte en su "inteligencia" todo lo que desees, siendo el resultado óptimo que la máquina nunca pueda perder, siempre gane o empate, y siendo el resultado más básico generar movimientos aleatorios para la máqiuna.
+Una partida consta de un número par de juegos. Cada vez empezará un jugador. En cada juego se cuenta el número de 3 en raya que ha sido capaz de hacer cada jugador. El juego lo gana quien más 3 en raya haya hecho. La partida la gana aquel que sea el primero en superar al otro en dos victorias (es decir, dos juegos de ventaja).
+
+Ejercicio 2. La programación permite hacer simulaciones de sistemas reales, permitiendo estimar resultados en poco tiempo sobre situaciones reales que llevarían mucho más tiempo y supondrían gastar recursos. Simula a una persona que cada semana juega a la lotería primitiva en los dos sorteos que hay durante un tiempo acotado pero muy largo (podrían ser varios milenios). El número de apuestas que echa en cada sorteo ha de ser un parámetro que se pide al usuario y las hace de una forma aleatoria. Tienes que simular aleatoriamente cada sorteo y mirar a ver lo que gana o lo que pierde. Se supone que siempre se gana lo mismo para una misma categoría y también hay reintegro. Haz que el programa vaya mostrando cada x sorteos (x será otro parámetro pedido al usuario), el dinero que ha gastado hasta este momento, el dinero que ha ganado y el saldo neto. Compáralo con el caso de echar siempre la(s) misma(s) apuestas y comprueba si es mejor, peor o da igual. Este ejercicio puede servirte para analizar si te resulta rentable apostar o matemáticamente es poco rentable.
+
+Ejercicio 3. Escribe un programa que dé solución al problema de las torres de Hanoi.
+El enunciado es el siguiente: Se dispone de una torre formada por varios discos de diferentes diámetros denominada torre O (origen), donde cada disco es de diámetro inferior a todos los que están por debajo. Se dispone de otras dos torres para dejar discos, una denominada torre A (auxiliar) y otra torre D (destino). El problema consiste en pasar todos los discos de la torre O a la torre D respetando dos normas muy simples:
+	-> Los discos se pasan de una torre a otra de uno en uno.
+	-> Nunca un disco de mayor diámetro puede estar sobre otro de menor diámetro.
+
+Se preguntará al inicio del programa por el tamaño de la torre O (entendiendo que tendrá el número de discos indicados, con algún límite preestablecido). Las torres A y D estarán inicialmente vacías.
+Se debe ofrecer la solución que da el programa a este problema paso a paso, mostrando el resultado de una forma gráfica. El inicio podría ser algo así:
+
+    *
+   ***
+  *****
+ *******
+*********
+========== ========== ==========
+    O           A          D

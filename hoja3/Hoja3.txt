@@ -1,0 +1,14 @@
+HOJA 3
+
+Ejercicio 1. Escribe un programa que traduzca un número romano menor que 4000 a un número en caracteres arábigos y viceversa.
+
+Ejercicio 2. Escribe un programa que acepte una hora en formato militar y la transforme al formato habitual (horas, minutos y AM/PM) y viceversa
+
+Ejercicio 3. Crea una lista, pide al usuario definir cuantos elementos va a tener y haz que la rellene de números dinámicamente. Tiene prohibido escribir cualquier cosa que no sean enteros.
+
+Ejercicio 4. Crea una matriz de 3x3, rellena sus celdas de números aleatorios e imprímela por pantalla tal que así:
+	x x x
+	x x x
+	x x x
+
+Ejercicio 5. Dada la matriz anterior, haz que un usuario seleccione una casilla. Ese valor se deberá convertir a cero y repintar de nuevo la matriz.
