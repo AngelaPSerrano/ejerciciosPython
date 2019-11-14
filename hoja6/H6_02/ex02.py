@@ -49,13 +49,31 @@ def datosPorArchivo(documento):
     print("El tamaño medio por palabra es: ",int(suma/len(palabrasArchivo)))
 
     lineaMasLarga = 0
+
+    numeroPalabrasCoinciden = 0
+    lineaCoinciden = 0
     for i in range(len(lineasArchivo)):
-        largoLinea = lineasArchivo[i].split()
-        if lineaMasLarga < len(largoLinea):
+        palabrasLinea = lineasArchivo[i].split()
+        if lineaMasLarga < len(palabrasLinea):
                 lineaMasLarga = i
+                
+        # aprovechamos el bucle        
+        primeraPalabra = list(palabrasLinea[0])
+        ultimaLetra = primeraPalabra[len(primeraPalabra)-1]
+        cuentaLetras = 0
+        
+        for j in range(len(palabrasLinea)):
+            palabra = palabrasLinea[j]
+            if palabra[len(palabra)-1] == ultimaLetra:
+                cuentaLetras = cuentaLetras + 1
+
+        if cuentaLetras >= numeroPalabrasCoinciden:
+            lineaCoinciden = i+1
+            numeroPalabrasCoinciden = cuentaLetras
+                
     palabrasEnMasLarga = lineasArchivo[lineaMasLarga].split()
     print("La línea con más palabras es la línea ", lineaMasLarga+1, " que contiene ", len(palabrasEnMasLarga) , " palabras.")
-
+    print("La línea con más palabras que terminan igual es la ", lineaCoinciden, " con ", numeroPalabrasCoinciden, " palabras que terminan igual.")
     
     f.close()
 
